@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Faixas coloridas</title>
+  <style>
+    
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      background: #2190ac;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+   
+    .target {
+      width: 400px;
+      height: 300px;
+      box-shadow: none; 
+      overflow: hidden;
+      border-radius: 2px;
+    }
+
+    
+    .stripe { width: 100%; display:block; }
+
+    
+    .s1 { height: 40px;  background: #651579; }  
+    .s2 { height: 30px;  background: #000000; }  
+    .s3 { height: 110px; background: #f10404; }  
+    .s4 { height: 120px; background: #000000; }  
+    
+    
+    @media (max-width: 420px) {
+      .target { width: 92vw; }
+    }
+  </style>
+</head>
+<body>
+  <div class="target" role="img" aria-label="Faixas coloridas">
+    <span class="stripe s1"></span>
+    <span class="stripe s2"></span>
+    <span class="stripe s3"></span>
+    <span class="stripe s4"></span>
+  </div>
+</body>
+</html>
